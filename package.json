@@ -1,0 +1,35 @@
+{
+  "name": "random-data-api",
+  "version": "1.0.0",
+  "description": "A javascript node.js wrapper for random-data-api.com",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jadennns/random-data-api-wrapper.git"
+  },
+  "keywords": [
+    "random-data-api",
+    "randomdata",
+    "random",
+    "data",
+    "random-data",
+    "random-data",
+    "api",
+    "random",
+    "user",
+    "data",
+    "random"
+  ],
+  "author": "jadennns (jadennns@yahoo.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jadennns/random-data-api-wrapper/issues"
+  },
+  "homepage": "https://github.com/jadennns/random-data-api-wrapper#readme",
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}
