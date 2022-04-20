@@ -24,14 +24,14 @@ export interface Address {
   full_address: string;
 }
 
-interface Appliance {
+export interface Appliance {
   id: number;
   uid: string;
   brand: string;
   equipment: string;
 }
 
-interface App {
+export interface App {
   id: number;
   uid: string;
   app_name: string;
@@ -43,7 +43,7 @@ interface App {
   app_patch_version: string;
 }
 
-interface Bank {
+export interface Bank {
   id: number;
   uid: string;
   account_number: string;
@@ -53,7 +53,7 @@ interface Bank {
   swift_bic: string;
 }
 
-interface Beer {
+export interface Beer {
   id: number;
   uid: string;
   brand: string;
@@ -67,7 +67,7 @@ interface Beer {
   blg: string;
 }
 
-interface Blood {
+export interface Blood {
   id: number;
   uid: string;
   type: string;
@@ -75,7 +75,7 @@ interface Blood {
   group: string;
 }
 
-interface BusinessCard {
+export interface BusinessCard {
   id: number;
   uid: string;
   credit_card_number: string;
@@ -83,7 +83,7 @@ interface BusinessCard {
   credit_card_type: string;
 }
 
-interface Cannabis {
+export interface Cannabis {
   id: number;
   uid: string;
   strain: string;
@@ -98,7 +98,7 @@ interface Cannabis {
   brand: string;
 }
 
-interface Code {
+export interface Code {
   id: number;
   uid: string;
   npi: string;
@@ -111,7 +111,7 @@ interface Code {
   sin: string;
 }
 
-interface Coffee {
+export interface Coffee {
   id: number;
   uid: string;
   blend_name: string;
@@ -121,7 +121,7 @@ interface Coffee {
   intensifier: string;
 }
 
-interface Commerce {
+export interface Commerce {
   id: number;
   uid: string;
   color: string;
@@ -133,7 +133,7 @@ interface Commerce {
   promo_code: string;
 }
 
-interface Company {
+export interface Company {
   id: number;
   uid: string;
   business_name: string;
@@ -152,7 +152,7 @@ interface Company {
   longitude: number;
 }
 
-interface Computer {
+export interface Computer {
   id: number;
   uid: string;
   platform: string;
@@ -161,7 +161,7 @@ interface Computer {
   stack: string;
 }
 
-interface Crypto {
+export interface Crypto {
   id: number;
   uid: string;
   md5: string;
@@ -169,7 +169,7 @@ interface Crypto {
   sha256: string;
 }
 
-interface CryptoCoin {
+export interface CryptoCoin {
   id: number;
   uid: string;
   coin_name: string;
@@ -177,7 +177,7 @@ interface CryptoCoin {
   logo: string;
 }
 
-interface Color {
+export interface Color {
   id: number;
   uid: string;
   hex_value: string;
@@ -186,7 +186,7 @@ interface Color {
   hsla_value: number[];
 }
 
-interface Dessert {
+export interface Dessert {
   id: number;
   uid: string;
   variety: string;
@@ -194,7 +194,7 @@ interface Dessert {
   flavor: string;
 }
 
-interface Device {
+export interface Device {
   id: number;
   uid: string;
   build_number: number;
@@ -205,7 +205,7 @@ interface Device {
   version: number;
 }
 
-interface Food {
+export interface Food {
   id: number;
   uid: string;
   dish: string;
@@ -214,7 +214,7 @@ interface Food {
   measurement: string;
 }
 
-interface Name {
+export interface Name {
   id: number;
   uid: string;
   name: string;
@@ -231,7 +231,7 @@ interface Name {
   initials: string;
 }
 
-interface HipsterStuff {
+export interface HipsterStuff {
   id: number;
   uid: string;
   word: string;
@@ -242,24 +242,24 @@ interface HipsterStuff {
   paragraphs: string[];
 }
 
-interface Invoice {
+export interface Invoice {
   id: number;
   uid: string;
   reference: string;
   creditor_reference: string;
 }
 
-interface Employment {
+export interface Employment {
   title: string;
   key_skill: string;
 }
 
-interface Coordinates {
+export interface Coordinates {
   lat: number;
   lng: number;
 }
 
-interface UserAddress {
+export interface UserAddress {
   city: string;
   street_name: string;
   street_address: string;
@@ -269,18 +269,18 @@ interface UserAddress {
   coordinates: Coordinates;
 }
 
-interface CreditCard {
+export interface CreditCard {
   cc_number: string;
 }
 
-interface Subscription {
+export interface Subscription {
   plan: string;
   status: string;
   payment_method: string;
   term: string;
 }
 
-interface User {
+export interface User {
   id: number;
   uid: string;
   password: string;
@@ -299,7 +299,7 @@ interface User {
   subscription: Subscription;
 }
 
-interface Stripe {
+export interface Stripe {
   id: number;
   uid: string;
   valid_card: string;
@@ -311,7 +311,7 @@ interface Stripe {
   ccv_amex: string;
 }
 
-interface Subscription {
+export interface Subscription {
   id: number;
   uid: string;
   plan: string;
@@ -321,7 +321,7 @@ interface Subscription {
   payment_term: string;
 }
 
-interface Vehicle {
+export interface Vehicle {
   id: number;
   uid: string;
   vin: string;
@@ -339,14 +339,14 @@ interface Vehicle {
   license_plate: string;
 }
 
-interface IdNumber {
+export interface IdNumber {
   id: number;
   uid: string;
   valid_us_ssn: string;
   invalid_us_ssn: string;
 }
 
-interface InternetStuff {
+export interface InternetStuff {
   id: number;
   uid: string;
   email: string;
@@ -365,7 +365,7 @@ interface InternetStuff {
   user_agent: string;
 }
 
-interface LoremIpsum {
+export interface LoremIpsum {
   id: number;
   uid: string;
   word: string;
@@ -379,7 +379,7 @@ interface LoremIpsum {
   questions: string[];
 }
 
-interface LoremFlickr {
+export interface LoremFlickr {
   id: number;
   uid: string;
   image: string;
@@ -390,7 +390,7 @@ interface LoremFlickr {
   image_1920_1080: string;
 }
 
-interface LoremPixel {
+export interface LoremPixel {
   id: number;
   uid: string;
   image: string;
@@ -401,7 +401,7 @@ interface LoremPixel {
   image_1920_1080: string;
 }
 
-interface Nation {
+export interface Nation {
   id: number;
   uid: string;
   nationality: string;
@@ -411,7 +411,7 @@ interface Nation {
   flag: string;
 }
 
-interface DataNumber {
+export interface DataNumber {
   id: number;
   uid: string;
   number: number;
@@ -425,7 +425,7 @@ interface DataNumber {
   digit: number;
 }
 
-interface PhoneNumber {
+export interface PhoneNumber {
   id: number;
   uid: string;
   phone_number: string;
@@ -433,7 +433,7 @@ interface PhoneNumber {
   cell_phone_in_e164: string;
 }
 
-interface Placeholdit {
+export interface Placeholdit {
   id: number;
   uid: string;
   image: string;
@@ -441,49 +441,49 @@ interface Placeholdit {
   image_gif: string;
 }
 
-interface Monday {
+export interface Monday {
   opens_at: string;
   closes_at: string;
   is_closed: boolean;
 }
 
-interface Tuesday {
+export interface Tuesday {
   opens_at: string;
   closes_at: string;
   is_closed: boolean;
 }
 
-interface Wednesday {
+export interface Wednesday {
   opens_at: string;
   closes_at: string;
   is_closed: boolean;
 }
 
-interface Thursday {
+export interface Thursday {
   opens_at: string;
   closes_at: string;
   is_closed: boolean;
 }
 
-interface Friday {
+export interface Friday {
   opens_at: string;
   closes_at: string;
   is_closed: boolean;
 }
 
-interface Saturday {
+export interface Saturday {
   opens_at: string;
   closes_at: string;
   is_closed: boolean;
 }
 
-interface Sunday {
+export interface Sunday {
   opens_at: string;
   closes_at: string;
   is_closed: boolean;
 }
 
-interface Hours {
+export interface Hours {
   monday: Monday;
   tuesday: Tuesday;
   wednesday: Wednesday;
@@ -493,7 +493,7 @@ interface Hours {
   sunday: Sunday;
 }
 
-interface Restaurant {
+export interface Restaurant {
   id: number;
   uid: string;
   name: string;
@@ -505,3 +505,40 @@ interface Restaurant {
   address: string;
   hours: Hours;
 }
+
+export function getRandomAddress(): Promise<Address>;
+export function getRandomAppliance(): Promise<Appliance>;
+export function getRandomApp(): Promise<App>;
+export function getRandomBank(): Promise<Bank>;
+export function getRandomBeer(): Promise<Beer>;
+export function getRandomBlood(): Promise<Blood>;
+export function getRandomBusinessCreditCard(): Promise<BusinessCard>;
+export function getRandomCannabis(): Promise<Cannabis>;
+export function getRandomCode(): Promise<Code>;
+export function getRandomCoffee(): Promise<Coffee>;
+export function getRandomCommerce(): Promise<Commerce>;
+export function getRandomCompany(): Promise<Company>;
+export function getRandomComputer(): Promise<Computer>;
+export function getRandomCrypto(): Promise<Crypto>;
+export function getRandomCryptoCoin(): Promise<CryptoCoin>;
+export function getRandomColor(): Promise<Color>;
+export function getRandomDessert(): Promise<Dessert>;
+export function getRandomDevice(): Promise<Device>;
+export function getRandomFood(): Promise<Food>;
+export function getRandomName(): Promise<Name>;
+export function getRandomHipsterStuff(): Promise<HipsterStuff>;
+export function getRandomInvoice(): Promise<Invoice>;
+export function getRandomUser(): Promise<User>;
+export function getRandomStripe(): Promise<Stripe>;
+export function getRandomSubscription(): Promise<Subscription>;
+export function getRandomVehicle(): Promise<Vehicle>;
+export function getRandomIdNumber(): Promise<IdNumber>;
+export function getRandomInternetStuff(): Promise<InternetStuff>;
+export function getRandomLoremIpsum(): Promise<LoremIpsum>;
+export function getRandomLoremFlickr(): Promise<LoremFlickr>;
+export function getRandomLoremPixel(): Promise<LoremPixel>;
+export function getRandomNation(): Promise<Nation>;
+export function getRandomNumber(): Promise<DataNumber>;
+export function getRandomPhoneNumber(): Promise<PhoneNumber>;
+export function getRandomPlaceholdit(): Promise<Placeholdit>;
+export function getRandomRestaurant(): Promise<Restaurant>;
