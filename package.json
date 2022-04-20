@@ -1,6 +1,6 @@
 {
   "name": "random-data-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A javascript node.js wrapper for random-data-api.com",
   "main": "src/index.js",
   "scripts": {
